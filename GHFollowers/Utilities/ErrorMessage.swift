@@ -1,0 +1,15 @@
+//
+//  ErrorMessage.swift
+//  GHFollowers
+//
+//  Created by Edson Brandon on 02/12/24.
+//
+
+import Foundation
+
+enum ErrorMessage: String{
+    case invalidUsername        = "This username created a invalid request. Please try again"
+    case unableToComplete       = "Unable to complete your request. Please check your network connection."
+    case invalidResponse        = "Invalid response from the server. Please try again."
+    case invalidData            = "The data recived from the server is invalid. Please try again"
+}
