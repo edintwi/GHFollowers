@@ -47,4 +47,11 @@ extension UIViewController {
         }
        
     }
+    
+    func showEmptyStateView(with message: String, in view: UIView) {
+        let emptyStateView = GFEmptyState()
+        emptyStateView.frame = view.bounds
+        view.addSubview(emptyStateView)
+        emptyStateView.messageLabel.text = message
+    }
 }
