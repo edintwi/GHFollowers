@@ -39,7 +39,7 @@ enum PersistanceManager {
                     break
                 }
                 
-                completion(saveFavorites(favorites: favorites))
+                completion(saveFavorites(favorites: retrievedFavorites))
                 break
             case .failure(let error):
                 completion(error)
