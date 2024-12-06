@@ -5,7 +5,7 @@
 //  Created by Edson Brandon on 29/11/24.
 //
 import UIKit
-
+import SafariServices
 fileprivate var containerView: UIView!
 
 extension UIViewController {
@@ -53,5 +53,11 @@ extension UIViewController {
         emptyStateView.frame = view.bounds
         view.addSubview(emptyStateView)
         emptyStateView.messageLabel.text = message
+    }
+    
+    func presentSafariVC(with url: URL) {
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.preferredBarTintColor = .systemGreen
+        present(safariVC, animated: true)
     }
 }
